@@ -12,7 +12,7 @@ import {
 
 import '@fontsource/roboto-mono'
 
-const Main = styled.main`
+const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,12 +30,19 @@ const App = () => (
   <ThemeProvider theme={theme}>
     <GlobalStyles />
 
-    <Main>
+    <Section>
       <Title>App</Title>
       <PrimaryButton>primary</PrimaryButton>
       <SecondaryButton>secondary</SecondaryButton>
       <TertiaryButton>tertiary</TertiaryButton>
-    </Main>
+    </Section>
+
+    <Section>
+      <Title>Disabled</Title>
+      <PrimaryButton disabled>Hello world</PrimaryButton>
+      <SecondaryButton disabled>Goodbye world</SecondaryButton>
+      <TertiaryButton disabled>Hey world</TertiaryButton>
+    </Section>
   </ThemeProvider>
 )
 
