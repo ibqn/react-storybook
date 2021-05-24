@@ -19,6 +19,7 @@ const GlobalStyles = styled.createGlobalStyle`
 
   body {
     margin: 0;
+    background-color: ${(props) => props.theme.backgroundColor};
     font-family: ${(props) => props.theme.primaryFont};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
