@@ -43,6 +43,13 @@ const App = () => (
       <SecondaryButton disabled>Goodbye world</SecondaryButton>
       <TertiaryButton disabled>Hey world</TertiaryButton>
     </Section>
+
+    <Section>
+      <Title>Modifiers</Title>
+      {/* <PrimaryButton>Hello World</PrimaryButton> */}
+      <PrimaryButton modifiers={['small']}>Hello World</PrimaryButton>
+      <SecondaryButton modifiers="large">Goodbye World</SecondaryButton>
+    </Section>
   </ThemeProvider>
 )
 

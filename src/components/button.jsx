@@ -1,4 +1,20 @@
 import styled from 'styled-components'
+import { css } from 'styled-components'
+import {
+  applyStyleModifiers,
+  styleModifierPropTypes,
+} from 'styled-components-modifiers'
+
+const BUTTON_MODIFIERS = {
+  small: ({ theme }) => css`
+    font-size: ${theme.typeScale.helperText};
+    padding: 8px;
+  `,
+  large: (props) => css`
+    font-size: ${props.theme.typeScale.header5};
+    padding: 16px 24px;
+  `,
+}
 
 const Button = styled.button`
   padding: 8px 12px;
@@ -32,7 +48,13 @@ const Button = styled.button`
     color: ${(props) => props.theme.disabled};
     border: none;
   }
+
+  ${applyStyleModifiers(BUTTON_MODIFIERS)}
 `
+
+Button.propTypes = {
+  modifiers: styleModifierPropTypes(BUTTON_MODIFIERS),
+}
 
 const PrimaryButton = styled(Button)`
   background-color: ${(props) => props.theme.primaryColor};
