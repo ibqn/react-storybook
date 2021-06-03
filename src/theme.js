@@ -15,6 +15,9 @@ const defaultTheme = {
   disabled: neutral[400],
   textOnDisabled: neutral[300],
 
+  formElementBackground: neutral[100],
+  textOnFormElementBackground: neutral[600],
+
   primaryFont,
   typeScale,
 
@@ -44,6 +47,9 @@ const darkTheme = {
 
   disabled: neutral[400],
   textOnDisabled: neutral[300],
+
+  formElementBackground: blue[100],
+  textOnFormElementBackground: neutral[100],
 
   primaryFont,
   typeScale,
