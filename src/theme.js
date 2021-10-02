@@ -42,7 +42,8 @@ const darkTheme = {
   primaryActiveColor: neutral[300],
 
   textColorOnPrimary: blue[300],
-  textColor: blue[300],
+  // textColor: blue[300],
+  textColor: '#fff',
   textColorInverted: neutral[100],
 
   disabled: neutral[400],
